@@ -5,8 +5,7 @@ from flask import Flask , render_template, request
 app = Flask(__name__)
 
 
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'csv', 'xlsx'}   # ext. allowed
-
+ALLOWED_EXTENSIONS = {'pdf', 'csv', 'xlsx'}   # ext. allowed
 
 def allowed_file(filename):
     return '.' in filename and \
