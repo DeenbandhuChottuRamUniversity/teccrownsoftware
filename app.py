@@ -1,5 +1,5 @@
 import os
-from flask import Flask, flash, request
+from flask import Flask , request, redirect, url_for
 from werkzeug.utils import secure_filename
 from flask import Flask , render_template, request
 app = Flask(__name__)
@@ -19,8 +19,7 @@ def upload_file():
         filename = file.filename
     if file and allowed_file(filename):
         file.save(f"./static/user_floder/{secure_filename(file.filename)}")
-        return "upload succesfully"
-    return "upload done"
+    return redirect('/')
 
 @app.route('/')
 def rend():

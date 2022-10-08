@@ -1,9 +1,5 @@
-* {
-    box-sizing: content-box
-}
-
 body {
-    background-color: #b8c0ff !important;
+    background-color: #c8b6ff !important;
 }
 
 /* Slideshow container */
@@ -11,11 +7,11 @@ body {
     max-width: 800px;
     max-height: 400px;
     position: relative;
-    margin: auto;
+    margin: 0%;
     padding: 0%;
 }
 
-.container {
+.container1 {
     position: relative;
     width: 300px;
     height: 300px;
@@ -25,14 +21,14 @@ body {
     border-style: outset;
     padding: 4px;
     border-radius: 7px;
-    border-color: white #00b4d8 #00b4d8 white;
+    border-color: white #9d4edd #9d4edd white;
 
 }
 
 .f2 {
     font-family: 'Merriweather', serif;
     text-align: center;
-    color: #1b4965;
+    color: white;
 
 }
 
@@ -67,7 +63,7 @@ body {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.506);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -108,10 +104,7 @@ body {
 }
 
 /* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
+
 
 #myProgress {
     width: 100%;
@@ -140,23 +133,22 @@ body {
 
 ::selection {
     color: #fff;
-    background: #6990F2;
+    background: #9d4edd;
 }
 
 .wrapper {
-    width: 100%;
+    width: 400px;
     height: fit-content;
-    background: rgba(163, 239, 239, 0.647);
-    
+    position: center;
     border-radius: 5px;
     padding: 30px;
     box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
-    /* margin-left: 40%; */
+
 
 }
 
 .wrapper header {
-    color: #6990F2;
+    color: whitesmoke;
     font-size: 27px;
     font-weight: 600;
     text-align: center;
@@ -171,11 +163,11 @@ body {
     justify-content: center;
     flex-direction: column;
     border-radius: 5px;
-    border: 2px dashed #6990F2;
+    border: 2px dashed #9d4edd;
 }
 
 form :where(i, p) {
-    color: #6990F2;
+    color: #9d4edd;
 }
 
 form i {
@@ -189,7 +181,7 @@ form p {
 
 section .row {
     margin-bottom: 10px;
-    background: #E9F0FF;
+
     list-style: none;
     padding: 15px 20px;
     border-radius: 5px;
@@ -199,7 +191,7 @@ section .row {
 }
 
 section .row i {
-    color: #6990F2;
+    color: #9d4edd;
     font-size: 30px;
 }
 
@@ -230,7 +222,7 @@ section .details span {
 .content .progress-bar .progress {
     height: 100%;
     width: 0%;
-    background: #6990F2;
+    background: #9d4edd;
     border-radius: inherit;
 }
 
@@ -265,4 +257,26 @@ section .details span {
 
 .uploaded-area i.fa-check {
     font-size: 16px;
+}
+
+.F2 {
+
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    text-shadow: #9d4edd;
+    color: #3c096c;
+    text-decoration: solid;
+
+}
+
+.f3 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    text-shadow: #9d4edd;
+    color: #3c096c;
+    text-decoration: solid;
+    margin: auto;
+    padding: auto;
+    border: #3c096c;
+    font-weight: 800;
 }
