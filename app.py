@@ -4,8 +4,8 @@ from werkzeug.utils import secure_filename
 from flask import Flask , render_template, request
 app = Flask(__name__)
 
-
-ALLOWED_EXTENSIONS = {'pdf', 'csv', 'xlsx'}   # ext. allowed
+# 'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif',
+ALLOWED_EXTENSIONS = {'csv'}   # ext. allowed
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -17,7 +17,7 @@ def upload_file():
         file = request.files['file']
         filename = file.filename
     if file and allowed_file(filename):
-        file.save(f"./static/user_floder/{secure_filename(file.filename)}")
+        file.save(f"./static/Data CSV/{secure_filename(file.filename)}")
     return redirect('/')
 
 @app.route('/')
