@@ -39,6 +39,13 @@ form.addEventListener("click", () => {
 
 fileInput.onchange = ({ target }) => {
   let file = target.files[0];
+  const myArray = file.name.split(".");
+  let n = myArray.length;
+  if (myArray[n - 1] != 'csv') {
+    console.log(myArray[n - 1]);
+    window.alert('Only CSV file is accepteable');
+    return;
+  }
   if (file) {
     let fileName = file.name;
     if (fileName.length >= 12) {
